@@ -1,0 +1,35 @@
+@mixin centre($axis: "both") {
+  position: absolute;
+  @if $axis == "y" {
+    top: 50%;
+    @include translateY(-50%);
+  }
+  @if $axis == "x" {
+    left: 50%;
+    @include translateX(-50%);
+  }
+  @if $axis == "both" {
+    top: 50%;
+    left: 50%;
+    @include translate(-50%, -50%);
+  }
+}
+
+// override bootstrap
+button, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+  outline: none;
+}
+
+.center-both {
+  @include centre();
+}
+
+.login-form {
+  width: 300px;
+  input { width: 60% }
+  .alert { padding: 10px }
+  .close { font-size: 18px }
+}
+
+.login-success {
+}
