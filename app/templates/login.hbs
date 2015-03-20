@@ -1,0 +1,24 @@
+<div class="panel panel-primary">
+<div class="panel-heading">Sign In to CareerBuilder</div>
+  <div class="panel-body">
+    <a class="thumbnail">
+      <img src="https://secure.icbdr.com/images/shared/img/cb-logo.png" alt=''>
+    </a>
+    <div {{bind-attr class=":alert :alert-danger errorMessage:display:hidden"}} role="alert">
+      <button type="button" class="close" {{action 'closeAlter'}}>
+        <span>&times;</span>
+      </button>
+      {{errorMessage}}
+    </div>
+
+    <div class="form-group">
+      {{input class='form-control' type='email' placeholder='Enter email' value=username}}
+    </div>
+    <div class="form-group">
+      {{input class='form-control' type='password' placeholder='Password' value=password}}
+    </div>
+    <button type="button" {{action 'signIn'}} {{bind-attr disabled='loginDisabled' class=':btn :btn-primary'}}>
+      {{loginButtonText}}
+    </button>
+  </div>
+</div>

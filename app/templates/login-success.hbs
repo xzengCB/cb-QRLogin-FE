@@ -1,0 +1,11 @@
+{{#if isLogin}}
+  <div class="alert alert-success" role="alert">
+    <strong>Congratulation!</strong> You successfully sign in.
+    <a class='btn btn-link' {{action 'scan'}}>Scan QRCode</a>
+  </div>
+{{else}}
+  <div class="alert alert-warning" role="alert">
+    <strong>Warning!</strong> Please sign in first.
+    <a class='btn btn-link' {{action 'gotoSignin'}}>Sign In</a>
+  </div>
+{{/if}}

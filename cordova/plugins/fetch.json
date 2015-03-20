@@ -1,0 +1,8 @@
+{
+    "com.mirasense.scanditsdk.plugin": {
+        "source": {
+            "type": "local",
+            "path": "/Development/scandit-barcodescanner-test-phonegap_4.2.0"
+        }
+    }
+}
