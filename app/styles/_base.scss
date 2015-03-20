@@ -26,9 +26,13 @@ button, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:activ
 
 .login-form {
   width: 300px;
-  input { width: 60% }
+  // input { width: 60% }
   .alert { padding: 10px }
   .close { font-size: 18px }
+  .thumbnail {
+    border: 0;
+    &:hover { border: 0 }
+  }
 }
 
 .login-success {

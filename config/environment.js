@@ -25,7 +25,7 @@ module.exports = function(environment) {
       'font-src': "'self' http://fonts.gstatic.com", // Allow fonts to be loaded from http://fonts.gstatic.com
       // 'connect-src': "'self' https://api.mixpanel.com http://custom-api.local", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
       'connect-src': "'self' http://10.63.88.129:3000",
-      'img-src': "'self' data:",
+      'img-src': "'self' data: https://secure.icbdr.com/images/shared/img/cb-logo.png",
       'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
       'media-src': "'self'",
       'report-uri': "'directive'"

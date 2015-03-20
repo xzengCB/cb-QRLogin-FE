@@ -5,8 +5,8 @@ import Util from 'qrlogin-fe/utils/ajax';
 export default Ember.Controller.extend(Presence, {
   needs: ['login-success'],
 
-  username: 'qqqqq@sina.com.cn',
-  password: 'Qwer1234!',
+  username: '',
+  password: '',
   loggingIn: false,
   errorMessage: '',
 
@@ -17,10 +17,6 @@ export default Ember.Controller.extend(Presence, {
   loginDisabled: function() {
     return this.get('loggingIn') || this.blank('username') || this.blank('password');
   }.property('username', 'password', 'loggingIn'),
-
-  showSpinner: function() {
-    return this.get('loggingIn');
-  }.property('loggingIn'),
 
   actions: {
     closeAlter: function() {

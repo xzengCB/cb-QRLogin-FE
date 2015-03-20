@@ -43,7 +43,7 @@
     },
     "installed_plugins": {
         "com.mirasense.scanditsdk.plugin": {
-            "PACKAGE_NAME": "com.hilotus.qr"
+            "PACKAGE_NAME": "com.cb.qrlogin"
         }
     },
     "dependent_plugins": {}
