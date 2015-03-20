@@ -1,8 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Object.create({
-  // host: 'http://10.63.88.142:3000',
-  host: 'http://192.168.0.105:3000',
+  host: 'http://10.63.88.129:3000',
   namespace: '',
   classesPath: '',
 

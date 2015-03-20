@@ -15,6 +15,10 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+.DS_Store
+
+# ignore cordova plugins
+cordova/plugins
 
 # iOS
 cordova/platforms/ios/build/
